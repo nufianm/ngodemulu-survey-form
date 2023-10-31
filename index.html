@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Ngodemulu Survey Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title" class="text-center">Ngodemulu Coding School Survey Form</h1>
+      <p id="description" class="description text-center">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <main>
+      <form action="post" id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Enter your name" required />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="Enter your email" required />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Age</label>
+          <input id="number" name="age" type="number" min="5" max="99" placeholder="Age" required />
+        </div>
+        <div class="form-group">
+          <label id="dropdown-label" for="dropdown">Which role do you interested?</label>
+          <select id="dropdown" name="role-interest">
+            <option value="">Select one</option>
+            <option value="">Front End Engineer</option>
+            <option value="">Back End Engineer</option>
+            <option value="">UI/UX</option>
+            <option value="">DevOps</option>
+            <option value="">Quality Assurance</option>
+          </select>
+        </div>
+        <div class="form-group">
+            <p>What is your highest education level?</p>
+            <label>
+                <input class="input-radio" name="education-level" value="less-than-high-school-diploma" type="radio" checked />
+                Less than high school diploma
+            </label>
+            <label>
+                <input class="input-radio" name="education-level" value="high-school-diploma-or-equivalent" type="radio" />
+                High school diploma or equivalent
+            </label>
+            <label>
+                <input class="input-radio" name="education-level" value="some-college-but-no-degree" type="radio" />
+                Some college but no degree
+            </label>
+            <label>
+                <input class="input-radio" name="education-level" value="associate-degree" type="radio" />
+                Associate degree
+            </label>
+            <label>
+                <input class="input-radio" name="education-level" value="bachelor-degree" type="radio" />
+                Bachelor's degree
+            </label>
+            <label>
+                <input class="input-radio" name="education-level" value="post-graduate-degree" type="radio" />
+                Post-graduate degree
+            </label>
+        </div>
+        <div class="form-group">
+            <p>What are your goals for attending this bootcamp? <span>(Check all that apply)</span></p>
+            <label>
+                <input class="input-checkbox" name="goals" value="to-pursuit-career-advancement" type="checkbox" />
+                To pursuit career advancement
+            </label>
+            <label>
+                <input class="input-checkbox" name="goals" value="to-gain-general-technical-training" type="checkbox" />
+                To gain general technical training
+            </label>
+            <label>
+                <input class="input-checkbox" name="goals" value="to-follow-my-passion-and-interest-in-programming" type="checkbox" />
+                To follow my passion and interest in programming
+            </label>
+            <label>
+                <input class="input-checkbox" name="goals" value="to-learn-a-specific-language-or-skill" type="checkbox" />
+                To learn a specific language or skill
+            </label>
+            <label>
+                <input class="input-checkbox" name="goals" value="to-network-with-other-students-and-mentors" type="checkbox" />
+                To network with other students and mentors
+            </label>
+        </div>
+        <div class="form-group">
+            <p>Do you have any comments or suggestions?</p>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment or suggestion here..."></textarea>
+        </div>
+        <div class="form-group">
+            <button id="submit" class="button-submit" type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
